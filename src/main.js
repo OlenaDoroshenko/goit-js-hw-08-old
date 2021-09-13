@@ -56,10 +56,10 @@ const refs = {
       }
     
       function closeModal(e){
-        if(e.target.classList.contains('lightbox__overlay') || e.target.dataset.action === 'close-lightbox') 
+        if(e.target.classList.contains('lightbox__overlay') || e.target.dataset.action === 'close-lightbox'){ 
         hideElement(modal);
         lightboxImage.setAttribute("src",""); 
-        removeListener();
+        removeListener();}
       }
     
       function showElement(element){
